@@ -1,0 +1,250 @@
+/* --- BIẾN MÀU & PHÔNG CHỮ CỔ ĐIỂN --- */
+:root {
+    --font-heading: 'Playfair Display', serif; /* Phông chữ tiêu đề kiểu cách */
+    --font-body: 'Noto Serif', serif; /* Phông chữ nội dung dễ đọc */
+
+    --color-parchment: #FAF0E6; /* Màu giấy cũ (nền chính) */
+    --color-parchment-dark: #EFE8D8; /* Màu giấy cũ (nền phụ, vd: bg-light) */
+    --color-dark-brown: #3a2a1a; /* Màu nâu đậm (Navbar, Footer) */
+    --color-primary-red: #8B0000; /* Màu đỏ đô (Nút bấm, điểm nhấn) */
+    --color-gold-accent: #B8860B; /* Màu vàng đồng (icon, link) */
+    --color-text: #333333; /* Màu chữ chính */
+}
+
+/* --- THIẾT LẬP CHUNG --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    background-color: var(--color-parchment); /* Nền màu giấy cũ */
+    color: var(--color-text);
+}
+
+/* --- TÙY CHỈNH TIÊU ĐỀ --- */
+h1, h2, h3, h4, h5, h6,
+.section-title, .hero-title, .brand-title,
+.navbar-brand, .accordion-button {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+/* Tiêu đề mục có đường gạch chân vàng đồng */
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-gold-accent);
+}
+
+/* --- TÙY CHỈNH BOOTSTRAP --- */
+.bg-light {
+    background-color: var(--color-parchment-dark) !important;
+}
+
+.text-primary {
+    color: var(--color-primary-red) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 12px 30px;
+    border-radius: 2px; /* Ít bo tròn, nhìn cổ điển hơn */
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #6a0000; /* Đỏ đậm hơn khi hover */
+    border-color: #6a0000;
+    transform: translateY(-2px);
+}
+.btn-primary:focus, .btn-primary:active {
+    box-shadow: none !important;
+}
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 12px 30px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--color-dark-brown);
+}
+
+/* 1. NAVBAR */
+.navbar {
+    background-color: var(--color-dark-brown) !important;
+}
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--color-gold-accent) !important;
+}
+.nav-link {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7) !important;
+    transition: color 0.3s;
+}
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important;
+}
+.navbar-scrolled {
+    background-color: rgba(58, 42, 26, 0.95) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* 2. HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background-image: url('Image/banner.jpg'); /* Đảm bảo ảnh này có trong thư mục Image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Tăng độ tối lớp phủ */
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+}
+.hero-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+}
+
+/* 3. FEATURES */
+.feature-icon-box {
+    transition: transform 0.3s ease;
+}
+.feature-icon-box:hover {
+    transform: translateY(-5px);
+}
+.feature-icon-box i {
+    color: var(--color-gold-accent) !important;
+}
+.feature-icon-box h5 {
+    font-weight: 700;
+}
+
+/* 4. PURCHASE */
+.price {
+    font-family: var(--font-heading);
+    color: var(--color-primary-red) !important;
+}
+
+/* 5. GAME RULES (ACCORDION) */
+.accordion {
+    --bs-accordion-border-radius: 2px;
+    --bs-accordion-border-color: #ddd;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color: var(--color-primary-red);
+    --bs-accordion-active-bg: var(--color-parchment-dark);
+}
+.accordion-item {
+    background-color: var(--color-parchment);
+    border-color: rgba(0,0,0,0.05);
+}
+.accordion-button {
+    font-size: 1.25rem;
+}
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+.accordion-body {
+    background-color: #fff; /* Nền trắng cho dễ đọc luật */
+}
+.accordion-body h5 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color: var(--color-text);
+}
+.accordion-body table {
+    margin-top: 1rem;
+}
+.table-dark {
+    --bs-table-bg: var(--color-dark-brown);
+    --bs-table-border-color: #4a3a2a;
+}
+.table-light {
+    --bs-table-bg: var(--color-parchment-dark);
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-color-state: var(--color-text);
+    --bs-table-bg-state: var(--color-parchment-dark);
+}
+
+/* 6. COMMUNITY */
+#community .btn {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.15rem;
+    transition: transform 0.2s ease;
+    border-radius: 2px;
+}
+#community .btn:hover {
+    transform: scale(1.03);
+}
+
+/* 7. FOOTER */
+.site-footer {
+    background-color: var(--color-dark-brown);
+}
+.site-footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
+.site-footer h5 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: #fff;
+}
+.site-footer .brand-title {
+    color: var(--color-gold-accent);
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+.site-footer .fa-stack {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s;
+}
+.site-footer .fa-stack:hover {
+    color: #fff;
+}
+.site-footer a {
+    text-decoration: none;
+}

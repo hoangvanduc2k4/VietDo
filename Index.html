@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Việt Đồ - Board Game Chiến Thuật Hàng Đầu (599k)</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Playfair+Display:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">VIỆT ĐỒ</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Giới Thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#game-rules">Luật Chơi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#community">Cộng Đồng</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary text-white ms-lg-2"
+                href="#purchase"
+                >Mua Ngay - 599.000đ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container text-center hero-content">
+        <h1 class="display-3 text-white hero-title">VIỆT ĐỒ</h1>
+        <p class="lead text-white-50 mb-4 hero-subtitle">
+          Một game chiến thuật sâu sắc, bối cảnh lịch sử Việt Nam. Bạn sẽ theo
+          phe nào?
+        </p>
+        <div>
+          <a href="#purchase" class="btn btn-primary btn-lg me-2"
+            >Mua Ngay - 599.000đ</a
+          >
+          <a href="#game-rules" class="btn btn-outline-light btn-lg"
+            >Xem Luật Chơi</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 section-title">Bên Trong Hộp "Việt Đồ"</h2>
+        <div class="row text-center g-4">
+          <div class="col-md-3 col-6">
+            <div class="feature-icon-box">
+              <i class="fas fa-map-marked-alt fa-3x text-primary mb-3"></i>
+              <h5>1 Bản Đồ Vùng Ngoài</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="feature-icon-box">
+              <i class="fas fa-chess-king fa-3x text-primary mb-3"></i>
+              <h5>10+ Thẻ Tướng Tinh Nhuệ</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="feature-icon-box">
+              <i class="fas fa-scroll fa-3x text-primary mb-3"></i>
+              <h5>50+ Thẻ Sự Kiện & Nhiệm Vụ</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="feature-icon-box">
+              <i class="fas fa-users fa-3x text-primary mb-3"></i>
+              <h5>100+ Quân Lính & Phụ Kiện</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="purchase" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <img
+              src="Image/product.png"
+              class="img-fluid rounded shadow-lg"
+              alt="Hộp game Việt Đồ"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title">Sở Hữu Ngay "Việt Đồ"</h2>
+            <p class="text-muted">
+              Trải nghiệm siêu phẩm board game chiến thuật thuần Việt. Hoàn hảo
+              cho những buổi tụ tập bạn bè hoặc thử thách trí tuệ.
+            </p>
+            <div class="price display-4 text-primary fw-bold mb-3">
+              599.000đ
+            </div>
+            <ul class="list-unstyled mb-4">
+              <li>
+                <i class="fas fa-check-circle text-success me-2"></i>Bối cảnh
+                lịch sử độc đáo
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-success me-2"></i>Chất liệu
+                in ấn cao cấp
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-success me-2"></i>Giá trị
+                chơi lại cao
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-success me-2"></i>Miễn phí
+                vận chuyển toàn quốc
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-lg w-100"
+              >Thêm Vào Giỏ Hàng</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="game-rules" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 section-title">
+          Việt Đồ: Luật Chơi & Hướng Dẫn
+        </h2>
+        <div class="accordion" id="rulesAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <strong>I. Thiết Lập Trò Chơi</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#rulesAccordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <strong>Bản đồ & Căn cứ:</strong> Đặt Bản đồ Vùng Ngoài và
+                    đánh dấu 6 Trụ sở Quyền lực quan trọng nhất.
+                  </li>
+                  <li>
+                    <strong>Quân Địch (Phản Quân - Áo Đỏ):</strong> Triển khai 3
+                    đơn vị (1 Tướng, 2 lính thường) tại 3 Vùng Biên ải được chỉ
+                    định.
+                  </li>
+                  <li>
+                    <strong>Quân Ta (Cấm Vệ Quân):</strong>
+                    <ul>
+                      <li>
+                        Mỗi người chơi chọn một màu, rút ngẫu nhiên một Tướng,
+                        và triển khai quân theo hướng dẫn của Tướng đó.
+                      </li>
+                      <li>
+                        Triển khai các đơn vị khởi đầu tại 1 Thị trấn Thành trì
+                        bất kỳ.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Thông tin Bí mật:</strong> Mỗi người chơi nhận 1 thẻ
+                    Thân phận Bí mật và 1 thẻ Nhiệm vụ và PHẢI GIỮ BÍ MẬT.
+                  </li>
+                  <li>
+                    <strong>Thang Điểm:</strong> Đặt điểm Danh Vọng, Quân Công
+                    và Ảnh Hưởng về 0.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <strong>II. Các Phe Phái Liên Minh (Thang Ảnh Hưởng)</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#rulesAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Người chơi tích lũy điểm Ảnh Hưởng trên ba thang phe phái này
+                  để nhận phần thưởng và tính điểm cuối game.
+                </p>
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered">
+                    <thead class="table-dark">
+                      <tr>
+                        <th>Phe Phái</th>
+                        <th>Màu Thẻ</th>
+                        <th>Đại Diện</th>
+                        <th>Mục Tiêu Cốt Lõi</th>
+                        <th>Phần Thưởng Phe</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Văn Sĩ / Quan Lại</td>
+                        <td>Xanh Lam</td>
+                        <td>Quan văn, Lục Bộ.</td>
+                        <td>Mong muốn trật tự và ổn định hành chính.</td>
+                        <td>Nhận 3 lính Cấm Vệ Quân</td>
+                      </tr>
+                      <tr>
+                        <td>Hoàng Gia</td>
+                        <td>Vàng</td>
+                        <td>Gia tộc Hoàng gia (Họ Lê), họ hàng của Vua.</td>
+                        <td>Mong muốn khôi phục thực quyền cho Vua Lê.</td>
+                        <td>Nhận 2 điểm Quân Công</td>
+                      </tr>
+                      <tr>
+                        <td>Cựu Thần Phủ Chúa</td>
+                        <td>Xanh Lục</td>
+                        <td>
+                          Các tướng lĩnh, quan lại thân tín của Chúa Trịnh.
+                        </td>
+                        <td>
+                          Mong muốn củng cố quyền lực tuyệt đối và quân sự cho
+                          Chúa Trịnh.
+                        </td>
+                        <td>Rút 1 thẻ Nhiệm vụ</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <strong>III. Cấu Trúc Vòng & Lượt Chơi</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#rulesAccordion"
+            >
+              <div class="accordion-body">
+                <p>Trò chơi diễn ra trong tối đa 5 Vòng.</p>
+                <h5>1. Thiết Lập Vòng</h5>
+                <p>Vào đầu mỗi Vòng, thêm 6 thẻ mới vào Nguồn Cung:</p>
+                <ul>
+                  <li>3 thẻ Đỏ ngửa (Quyền Lực Phủ Chúa)</li>
+                  <li>1 thẻ Xanh Lam úp (Văn Sĩ)</li>
+                  <li>1 thẻ Vàng úp (Hoàng Gia)</li>
+                  <li>1 thẻ Xanh Lục úp (Cựu Thần)</li>
+                </ul>
+
+                <h5>2. Lượt Người Chơi (Chọn 1 trong 3 Hành động)</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Hành Động</th>
+                        <th>Các Bước Thực Hiện</th>
+                        <th>Lưu Ý Quan Trọng</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <strong
+                            >A. Chơi 1 Thẻ Sự Kiện (Xanh Lục, Xanh Lam,
+                            Vàng)</strong
+                          >
+                        </td>
+                        <td>
+                          1. Rút 1 thẻ (nếu tay không có thẻ).<br />2. Chơi 1
+                          thẻ từ tay:<br />
+                          a. Nhận +1 điểm Ảnh Hưởng theo màu thẻ.<br />
+                          b. Thực hiện hiệu ứng HOẶC BỎ THẺ để lấy 1 Hành động
+                          Cơ bản.<br />3. Kích hoạt Lực lượng Trịnh.
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>B. Chơi 1 Thẻ Quyền Lực Phủ Chúa (Đỏ)</strong>
+                        </td>
+                        <td>
+                          1. Rút 1 thẻ Đỏ (nếu tay không có thẻ).<br />2. Chơi 1
+                          thẻ Đỏ Tinh Nhuệ:<br />
+                          a. Thực hiện 2 Hành động Cơ bản.<br />
+                          b. Triển khai quân Trịnh theo hướng dẫn trên thẻ.
+                        </td>
+                        <td>KHÔNG cần Kích hoạt Lực lượng Trịnh sau đó.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>C. Bỏ Lượt (Pass)</strong></td>
+                        <td>
+                          1. Chọn vị trí Thứ tự Lượt cho Vòng sau.<br />2. Kết
+                          thúc lượt trong Vòng này.
+                        </td>
+                        <td>
+                          Không thể Bỏ Lượt nếu bạn là người chơi cuối cùng chưa
+                          Bỏ Lượt trong khi Nguồn Cung vẫn còn thẻ.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h5>3. Cơ Chế Kích Hoạt Lực Lượng Trịnh</h5>
+                <p>
+                  Áp dụng sau khi chơi 1 Thẻ Sự Kiện (Xanh Lục, Xanh Lam, Vàng).
+                </p>
+                <ul>
+                  <li>
+                    <strong>Tiếp viện:</strong> Thêm 1 lính Địch vào 1 đơn vị
+                    quân / 2 căn cứ Địch (hoặc Vùng Biên ải).
+                  </li>
+                  <li>
+                    <strong>Di chuyển:</strong> (Chọn Dụ Địch HOẶC Đẩy Quân).
+                    <ul>
+                      <li>
+                        <strong>Dụ Địch:</strong> Di chuyển tối đa 2 ô. Đơn vị
+                        di chuyển là: Tướng + tối đa 2 lính từ đơn vị HOẶC bất
+                        kỳ số lính nào từ đơn vị thường.
+                      </li>
+                      <li>
+                        <strong>Đẩy Quân:</strong> Di chuyển tối đa 2 ô. Đơn vị
+                        di chuyển là: Tướng Tinh Nhuệ + tất cả lính trừ 1.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Luật Di Chuyển Chung:</strong>
+                    <ul>
+                      <li>
+                        Phải kết thúc di chuyển tại một căn cứ KHÔNG bị Địch
+                        kiểm soát.
+                      </li>
+                      <li>
+                        Địch phải luôn để lại ít nhất 1 lính để giữ căn cứ/Vùng
+                        Biên ải.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Luật Đặc Biệt cho Đẩy Quân:</strong>
+                    <ul>
+                      <li>Đơn vị nhặt thêm lính trên đường đi.</li>
+                      <li>
+                        Phải dừng lại để tấn công nếu gặp đơn vị của người chơi
+                        khác.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <strong>IV. Hành Động Cơ Bản & Chiến Đấu</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#rulesAccordion"
+            >
+              <div class="accordion-body">
+                <h5>
+                  1. Bốn Hành Động Cơ Bản (Có thể thực hiện từ Thẻ Sự Kiện hoặc
+                  Thẻ Đỏ)
+                </h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Tên Hành Động</th>
+                        <th>Mô Tả</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Tuyển Dân Binh</td>
+                        <td>
+                          Thêm 2 lính thường vào một trong các đơn vị quân của
+                          bạn.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Về Thành Trì</td>
+                        <td>
+                          Triển khai lại một đơn vị Cấm Vệ Quân từ khu vực loại
+                          bỏ về một Trụ sở Quyền lực an toàn (không bị Địch kiểm
+                          soát). Hồi phục hiệu ứng của thẻ.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Đầu Hàng</td>
+                        <td>
+                          Thêm 1 đơn vị quân Trịnh vào một căn cứ liền kề KHÔNG
+                          bị Địch kiểm soát. Đơn vị quân của bạn ở đó mất 1 lính
+                          và rút về một căn cứ thân thiện liền kề.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Dấy Binh</td>
+                        <td>
+                          Di chuyển tất cả các đơn vị quân của bạn 0-2 ô. Dừng
+                          lại nếu vào căn cứ do Địch kiểm soát. Sau đó giải
+                          quyết Chiến Đấu tại tất cả các căn cứ đang tranh chấp.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h5>2. Chiến Đấu</h5>
+                <ul>
+                  <li>
+                    <strong>Tính Sức Mạnh:</strong> Số Lính + Sức Mạnh Nhân vật
+                    (Tướng) + Kỹ năng.
+                  </li>
+                  <li>
+                    <strong>Luật Chiến Thắng:</strong>
+                    <ul>
+                      <li>Bên mạnh hơn thắng và chiếm căn cứ.</li>
+                      <li>HÒA: Quân Trịnh thắng.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Tổn Thất & Phần Thưởng:</strong>
+                    <ul>
+                      <li>
+                        Bên thắng mất 1 lính (chỉ áp dụng cho quân người chơi;
+                        quân Trịnh an toàn).
+                      </li>
+                      <li>
+                        Bên thua mất 2 lính và rút về một căn cứ thân thiện liền
+                        kề (hoặc trung lập/địch nếu không có).
+                      </li>
+                      <li>
+                        Quân người chơi nhận điểm Quân Công cho mỗi lính Địch bị
+                        loại (hoặc điểm bằng Sức Mạnh của Tướng Trịnh bị đánh
+                        bại).
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Đơn vị Kết hợp:</strong> Nếu nhiều đơn vị quân từ
+                    các người chơi khác nhau tham gia, họ kết hợp lực lượng để
+                    tính Sức Mạnh.
+                  </li>
+                  <li>
+                    <strong>Chiến Lợi Phẩm:</strong> Chỉ đơn vị mạnh nhất mới
+                    nhận Chiến Lợi Phẩm (hoặc chịu tổn thất).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <strong>V. Kết Thúc & Tính Điểm Danh Vọng</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#rulesAccordion"
+            >
+              <div class="accordion-body">
+                <h5>1. Phán Quyết Vận Mệnh</h5>
+                <p>
+                  Sau Vòng 3, 4, và 5, kiểm tra số lượng Trụ sở Quyền lực mỗi
+                  bên kiểm soát (căn cứ trống tính là Triều đình kiểm soát).
+                </p>
+                <ul>
+                  <li>
+                    <strong>Triều đình Thắng:</strong> Phe không phải địch kiểm
+                    soát đa số Trụ sở Quyền lực.
+                  </li>
+                  <li>
+                    <strong>Lực lượng Trịnh Khẳng định Quyền lực:</strong> Quân
+                    Trịnh kiểm soát đa số Trụ sở Quyền lực.
+                  </li>
+                </ul>
+                <p>
+                  Khi phán quyết được đưa ra, người chơi tiết lộ Thân phận Bí
+                  mật và tính điểm cuối game.
+                </p>
+
+                <h5>2. Công Thức Tính Điểm Danh Vọng Cuối Cùng</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-dark">
+                      <tr>
+                        <th>Yếu Tố</th>
+                        <th>Nội Dung</th>
+                        <th>Triều đình Thắng</th>
+                        <th>Lực lượng Trịnh Thắng (Chúa Trịnh)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>A. Ảnh Hưởng Chính Trị</strong></td>
+                        <td>
+                          Chọn 2/3 phe để tính điểm: Điểm Ảnh Hưởng phe * Giá
+                          trị căn cứ màu đó.
+                        </td>
+                        <td>Tính trên các căn cứ KHÔNG bị Địch kiểm soát.</td>
+                        <td>Tính trên các căn cứ ĐÃ bị Địch kiểm soát.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>B. Quân Công</strong></td>
+                        <td>Quốc Công (Người chơi có Quân Công cao nhất).</td>
+                        <td>
+                          3 điểm mỗi Quân Công + 2 điểm thưởng cho mỗi lính Cấm
+                          Vệ Quân dư.
+                        </td>
+                        <td>
+                          0 điểm mỗi Quân Công - 1 điểm cho mỗi lính Cấm Vệ Quân
+                          dư.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Những người chơi khác.</td>
+                        <td>2 điểm mỗi Quân Công</td>
+                        <td>2 điểm mỗi Quân Công</td>
+                      </tr>
+                      <tr>
+                        <td><strong>C. Mục Tiêu Bí Mật</strong></td>
+                        <td>Lật thẻ Thân phận Bí mật.</td>
+                        <td>
+                          Cộng/trừ điểm theo yêu cầu cụ thể của Thân phận.
+                        </td>
+                        <td>
+                          Cộng/trừ điểm theo yêu cầu cụ thể của Thân phận.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <strong
+                  >VI. Thiết Kế Nhân Vật & Thẻ Bài (Có thể thay đổi)</strong
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#rulesAccordion"
+            >
+              <div class="accordion-body">
+                <h5>Thân Phận Bí Mật</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Thân Phận</th>
+                        <th>Khả Năng Tiết Lộ (1 lần/game)</th>
+                        <th>Mục Tiêu Danh Vọng Cuối Cùng</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1. Kẻ Tiếm Ngôi</td>
+                        <td>
+                          Khiến 2 căn cứ Cấm Vệ Quân gần nhất mất 2 lính và thêm
+                          1 lính Địch.
+                        </td>
+                        <td>
+                          Nếu Lực lượng Trịnh Thắng: 5 điểm cho mỗi Trụ sở Quyền
+                          lực bị Địch kiểm soát.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2. Thương Nhân Thiết Yếu</td>
+                        <td>
+                          Nhận ngay 3 điểm Quân Công và 1 điểm cho mỗi thẻ Văn
+                          Sĩ bạn đã chơi.
+                        </td>
+                        <td>
+                          Điểm Thưởng Phụ: +1 cho mỗi 2 điểm Quân Công bạn sở
+                          hữu. Liên minh Văn Sĩ: +10 nếu bạn có điểm Ảnh Hưởng
+                          Văn Sĩ (Xanh Lam) cao nhất.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3. Học Giả Trung Nghĩa</td>
+                        <td>
+                          Sau khi Địch chiếm một Trụ sở: Loại 2 lính Địch khỏi
+                          Trụ sở Quyền lực đó.
+                        </td>
+                        <td>
+                          Nếu Triều đình Thắng: +15 nhân với số Trụ sở Quyền lực
+                          không bị Địch chiếm. Ưu tiên Hoàng Gia: +10 nếu điểm
+                          Ảnh Hưởng Hoàng Gia (Vàng) cao nhất.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4. Lãnh Tụ Nghĩa Quân Địa Phương</td>
+                        <td>
+                          Hủy 1 thẻ Nhiệm vụ trên tay đối thủ bất kỳ, sau đó
+                          nhận 3 điểm Quân Công.
+                        </td>
+                        <td>
+                          Nếu Lực lượng Trịnh Thắng: +1 cho mỗi 2 đơn vị Địch
+                          (Phản Quân) có mặt trên bản đồ khi kết thúc game.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5. Sát Thủ Bí Mật</td>
+                        <td>
+                          Chọn một người chơi có điểm Ảnh Hưởng Văn Sĩ (Xanh
+                          Lam) hoặc Hoàng Gia (Vàng) cao nhất: giảm 3 điểm Ảnh
+                          Hưởng của họ.
+                        </td>
+                        <td>
+                          Nếu Triều đình Thắng: +15. Ưu tiên Lính Đánh Thuê: +1
+                          cho mỗi 1 điểm Quân Công bạn còn lại trên thang điểm
+                          cá nhân (chưa dùng).
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>6. Lãnh Tụ Độc Lập</td>
+                        <td>
+                          Chọn 1 Trụ sở Quyền lực, đặt 3 lính Cấm Vệ Quân của
+                          bạn vào đó và nhận 2 điểm Quân Công.
+                        </td>
+                        <td>
+                          Kiểm Soát Nhiều Khu Vực Nhất: +2 cho mỗi Trụ sở Quyền
+                          lực nơi bạn là người chơi duy nhất có lính (Chiếm đóng
+                          Độc quyền). Nếu Lịch lượng Trịnh Thắng: +10.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h5 class="mt-4">Tướng và Đơn Vị</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Tên</th>
+                        <th>Kỹ Năng (Liên quan Chiến đấu)</th>
+                        <th>Số Lính Triển Khai (Deploy)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1. Lính Đánh Thuê Mông Cổ</td>
+                        <td>
+                          Kỵ Binh Xung Kích: Sau khi triển khai, đơn vị này có
+                          thể di chuyển thêm 1 Trụ sở Quyền lực ngay lập tức, bỏ
+                          qua kiểm tra lính Địch.
+                        </td>
+                        <td>2 đơn vị (Lính Đánh Thuê)</td>
+                      </tr>
+                      <tr>
+                        <td>2. Bậc Thầy Võ Thuật</td>
+                        <td>
+                          Huấn Luyện Nghiêm Ngặt: Khi đơn vị này tham gia chiến
+                          đấu tại một Trụ sở, +1 Sức Mạnh cho tất cả lính Cấm Vệ
+                          Quân thân thiện ở đó.
+                        </td>
+                        <td>1 đơn vị (Chỉ Huy)</td>
+                      </tr>
+                      <tr>
+                        <td>3. Thương Nhân Vận Tải</td>
+                        <td>
+                          Tiếp Tế Khẩn Cấp: Khi triển khai, đặt 2 điểm Quân Công
+                          tại Trụ sở này. Địch tấn công Trụ sở này phải giảm 1
+                          Sức Mạnh (tối thiểu 1).
+                        </td>
+                        <td>2 đơn vị (Vệ Sĩ Hộ Tống)</td>
+                      </tr>
+                      <tr>
+                        <td>4. Quân Y</td>
+                        <td>
+                          Hỗ Trợ Chiến Trường: Sau khi chiến đấu kết thúc tại
+                          một Trụ sở có đơn vị này, bạn có thể hồi sinh 1 lính
+                          Cấm Vệ Quân bị loại gần nhất, đặt tại Trụ sở đó.
+                        </td>
+                        <td>1 đơn vị (Nhân Vật Chính)</td>
+                      </tr>
+                      <tr>
+                        <td>5. Dân Binh Chống Địch Địa Phương</td>
+                        <td>
+                          Phòng Thủ Kiên Cố: Khi một Trụ sở có đơn vị này bị
+                          quân Địch tấn công/chiếm, loại 1 lính Địch sau khi
+                          chiến đấu kết thúc (Dân Binh Trả Thù).
+                        </td>
+                        <td>3 đơn vị (Dân Binh Địa Phương)</td>
+                      </tr>
+                      <tr>
+                        <td>6. Thợ Săn Tiền Thưởng</td>
+                        <td>
+                          Săn Mục Tiêu: Khi triển khai, chọn 1 Trụ sở. Nếu Trụ
+                          sở đó có lính Địch, đơn vị này gây 1 sát thương trực
+                          tiếp lên 1 lính Địch ở đó trước khi chiến đấu.
+                        </td>
+                        <td>1 đơn vị (Sát Thủ Riêng)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h5 class="mt-4">Tướng Đặc Biệt</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Tên</th>
+                        <th>Kỹ Năng (Liên quan Chiến đấu)</th>
+                        <th>Số Lính Triển Khai (Deploy)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1. Tướng Tư Mã Trịnh Công</td>
+                        <td>
+                          Chỉ Huy Tác Chiến: Đơn vị này có thể di chuyển qua 2
+                          Trụ sở Quyền lực trong 1 lượt. Khi chiến đấu, cho phép
+                          vô hiệu hóa kỹ năng đặc biệt của 1 đơn vị Địch (Tinh
+                          Nhuệ/Tướng Địch) tại Trụ sở đó.
+                        </td>
+                        <td>2 đơn vị (Cấm Vệ Quân Tinh Nhuệ)</td>
+                      </tr>
+                      <tr>
+                        <td>2. Hoàng Thân/Phò Mã</td>
+                        <td>
+                          Tăng Cường Hoàng Gia: Khi triển khai, nếu bạn có điểm
+                          Ảnh Hưởng Hoàng Gia (Vàng) cao nhất, đặt thêm 1 lính
+                          Cấm Vệ Quân từ quỹ lính của bạn tại Trụ sở này.
+                        </td>
+                        <td>
+                          3 đơn vị (Vệ Binh Cá Nhân, thể hiện Quyền lực Hoàng
+                          gia)
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="text-center mb-5 section-title">
+          Tham Gia Cộng Đồng Việt Đồ
+        </h2>
+        <p class="text-muted mb-4">
+          Kết nối với những người chơi khác, chia sẻ chiến thuật, và cập nhật
+          những tin tức mới nhất!
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-5 mb-3">
+            <a
+              href="httpsTiktokLink"
+              class="btn btn-dark btn-lg w-100 p-3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-tiktok me-2"></i> Theo Dõi Kênh TikTok
+            </a>
+          </div>
+          <div class="col-md-5 mb-3">
+            <a
+              href="httpsFacebookLink"
+              class="btn btn-primary btn-lg w-100 p-3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-f me-2"></i> Tham Gia Nhóm Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 brand-title">VIỆT ĐỒ</h5>
+            <p>
+              Board game chiến thuật lấy bối cảnh lịch sử Việt Nam, mang đến
+              trải nghiệm sâu sắc và những giờ phút giải trí đáng giá.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4">Liên Hệ</h5>
+            <p>
+              <i class="fas fa-map-marker-alt me-3"></i> 123 Đường ABC, Phường
+              XYZ, Hà Nội
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 0987 654 321</p>
+            <p><i class="fas fa-envelope me-3"></i> hotro@vietdo.vn</p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4">Theo Dõi</h5>
+            <a href="#" class="text-white fs-4 me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white fs-4 me-3"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" class="text-white fs-4 me-3"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="#" class="text-white fs-4 me-3"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <hr class="my-3" />
+
+        <div class="row align-items-center">
+          <div class="col-md-12 text-center">
+            <p>© 2025 VIỆT ĐỒ. Bảo lưu mọi quyền.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

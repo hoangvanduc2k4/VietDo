@@ -15,8 +15,8 @@
     --color-text-main: #FFFFFF;
     --color-text-muted: #CCCCCC;
 
-    --font-heading: 'Cinzel', serif;
-    --font-body: 'Playfair Display', serif;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
 }
 
 body {
@@ -195,9 +195,19 @@ a {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    /* Playfair Display */
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.6;
     margin-bottom: 40px;
-    color: #eee;
+    color: var(--color-parchment);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    max-width: 900px;
+    /* Prevent it from getting too wide */
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
 }
 
 /* Section 2: Hook (Features) */
@@ -268,69 +278,350 @@ a {
     color: var(--color-war-red);
 }
 
-.features-image img {
-    border: 5px solid var(--color-bronze-dark);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+/* Section 3: Rules - Balanced Layout */
+.rules-container-balanced {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* 1. Header Block */
+.rule-header-block {
+    text-align: center;
+    background: rgba(40, 40, 40, 0.4);
+    padding: 20px;
+    border-radius: 4px;
+    border-top: 3px solid var(--color-bronze);
+    border-bottom: 3px solid var(--color-bronze);
+}
+
+.rule-header-block h3 {
+    color: var(--color-bronze);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.rule-list-inline {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: var(--color-parchment);
+    list-style: none;
+}
+
+/* Detailed Walkthrough Styling */
+.detailed-walkthrough {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.walkthrough-step {
+    background: rgba(40, 40, 40, 0.6);
+    border-left: 4px solid var(--color-bronze);
+    padding: 20px;
+    border-radius: 0 4px 4px 0;
+    transition: background 0.3s;
+}
+
+.walkthrough-step:hover {
+    background: rgba(60, 60, 60, 0.8);
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.step-badge {
+    background: var(--color-bronze);
+    color: #111;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 2px;
+}
+
+.step-header h4 {
+    color: var(--color-parchment);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.step-body p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.highlight-text {
+    color: var(--color-bronze);
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.scenario-box {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px dashed #666;
+    padding: 15px;
+    margin-top: 15px;
     border-radius: 4px;
 }
 
+.scenario-box h5 {
+    color: #aaa;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.scenario-box p {
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+/* Win/Lose Indicators in Table */
+.result-lose {
+    color: var(--color-war-red);
+    font-weight: bold;
+}
+
+.result-win {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Video Section */
+.video-tutorial-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.video-title {
+    color: var(--color-bronze);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.video-placeholder {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .step-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+/* 3. Roulette Feature Block */
+.roulette-feature-block {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 30px;
+    background: linear-gradient(145deg, rgba(80, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    border: 2px solid var(--color-war-red);
+    padding: 30px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.roulette-content h3 {
+    color: var(--color-war-red);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.roulette-image img {
+    border: 4px solid #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .rules-container-balanced {
+        gap: 30px;
+    }
+
+    .gameplay-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .roulette-feature-block {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .roulette-image {
+        order: -1;
+        /* Image top on mobile */
+        max-width: 300px;
+        margin: 0 auto 20px auto;
+    }
+
+    .rule-list-inline {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 /* Section 3: Rules */
+/* Section 3: Rules - Step Process */
 .rules-section {
     padding: 80px 0;
+    background: linear-gradient(to bottom, #1a1a1a, #202020);
 }
 
-.rules-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+/* Section 3: Rules - Detailed Block Layout */
+/* Old detailed block styles replaced by balanced layout */
+
+.punishment-visual {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
 }
 
-.rule-card {
-    background: linear-gradient(145deg, #2a2a2a, #202020);
-    border: 1px solid var(--color-bronze-dark);
-    padding: 10px;
-    /* Outline gap */
-    position: relative;
-}
-
-.rule-card::before {
-    /* Corner decoration concept */
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid rgba(205, 127, 50, 0.3);
-    margin: 4px;
-    pointer-events: none;
-}
-
-.card-inner {
-    padding: 30px 20px;
-    text-align: center;
-    height: 100%;
+.p-level {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #333;
+    /* Fallback */
 }
 
-.card-icon {
-    font-size: 3rem;
-    color: var(--color-bronze);
-    margin-bottom: 20px;
+.p-level:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.rule-card h3 {
+.p-level .p-percent {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+}
+
+.p-level .p-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/* Colors */
+.p-level.green {
+    background: linear-gradient(to bottom, #2ecc71, #27ae60);
+    border-color: #2ecc71;
+}
+
+.p-level.yellow {
+    background: linear-gradient(to bottom, #f1c40f, #f39c12);
+    border-color: #f1c40f;
+    color: #222;
+}
+
+.p-level.orange {
+    background: linear-gradient(to bottom, #e67e22, #d35400);
+    border-color: #e67e22;
+}
+
+.p-level.red {
+    background: linear-gradient(to bottom, #c0392b, #8E2115);
+    border-color: #c0392b;
+    animation: pulseRed 2s infinite;
+}
+
+@keyframes pulseRed {
+    0% {
+        box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(192, 57, 43, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(192, 57, 43, 0);
+    }
+}
+
+.example-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 3px solid var(--color-bronze);
+    font-style: italic;
+    color: #ddd;
+}
+
+.rules-table {
+    width: 100%;
+    border-collapse: collapse;
     margin-bottom: 15px;
-    color: var(--color-parchment);
 }
 
-.rule-card p {
-    color: var(--color-text-muted);
-    font-size: 0.95rem;
+.rules-table th,
+.rules-table td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: left;
+    font-size: 0.9rem;
 }
+
+.rules-table th {
+    background: #222;
+    color: var(--color-bronze);
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* Responsive adjustments for Rules */
+@media (max-width: 768px) {
+    .rules-container-detailed {
+        grid-template-columns: 1fr;
+    }
+
+    .rule-block.highlight {
+        grid-column: span 1;
+    }
+
+    .p-step {
+        width: 45%;
+        flex: auto;
+    }
+}
+
+/* Cleaned up old card styles */
 
 /* Section 4: Product */
 .product-section {
@@ -675,21 +966,57 @@ a {
 }
 
 @media (max-width: 768px) {
-    .main-nav {
-        display: none;
-        /* Add JS toggle later or keep simple stack */
+    .hero-section {
+        min-height: 100vh;
+        /* Flex height instead of fixed */
+        height: auto;
+        padding: 120px 0 60px 0;
     }
 
+    .hero-title {
+        font-size: 2.5rem;
+        /* Smaller title on tablet/mobile */
+    }
+
+    /* Mobile Menu Polish */
     .mobile-menu-toggle {
         display: block;
+        z-index: 1001;
+        /* Ensure above overlay */
     }
 
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .main-nav a {
+        font-size: 1.5rem;
+    }
+
+    /* Merged with above or adding specific overrides */
     .nav-container {
-        padding: 0 15px;
-    }
-
-    .features-container {
-        grid-template-columns: 1fr;
+        padding: 0 20px;
     }
 
     .hero-title {

@@ -489,6 +489,8 @@ a {
 .rules-section {
     padding: 80px 0;
     background: linear-gradient(to bottom, #1a1a1a, #202020);
+    position: relative;
+    /* Ensure z-index works if needed */
 }
 
 /* Section 3: Rules - Detailed Block Layout */

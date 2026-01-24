@@ -148,8 +148,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding-top: 80px;
+    text-align: left;
+    padding-top: 150px;
+    /* Increased to prevent header overlap */
+    padding-bottom: 50px;
+    /* Add bottom padding */
     /* Offset fixed header */
 }
 
@@ -160,6 +163,7 @@ a {
     width: 100%;
     height: 100%;
     z-index: -1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
 }
 
 .hero-bg img {
@@ -174,14 +178,27 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    max-width: 1200px;
+    width: 100%;
     animation: fadeInUp 1s ease-out;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: center;
+    text-align: left;
+}
+
+.hero-text-col {
+    padding-right: 20px;
+}
+
+.hero-slider-col {
+    width: 100%;
 }
 
 .hero-title {
@@ -194,20 +211,109 @@ a {
     padding-bottom: 10px;
 }
 
-.hero-subtitle {
-    font-family: var(--font-heading);
-    /* Playfair Display */
-    font-style: italic;
-    font-size: 1.4rem;
+.hero-text-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    /* Reduced from 30px */
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(205, 127, 50, 0.3);
+    margin-bottom: 20px;
+}
+
+.hero-title-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    /* Reduced from 3rem */
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(205, 127, 50, 0.8), 2px 2px 4px #000;
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+.hero-title-highlight {
+    color: var(--color-bronze);
+    font-size: 2.5rem;
+    /* Reduced from 3.5rem */
+    display: block;
+    /* Ensure it breaks line if needed or stands out */
+}
+
+.hero-edition {
+    font-family: 'Playfair Display', serif;
+    color: #f5e6ca;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-bronze);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.hero-desc {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 40px;
-    color: var(--color-parchment);
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-    max-width: 900px;
-    /* Prevent it from getting too wide */
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 400;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.hero-price-container {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.hero-price-old {
+    color: #888;
+    text-decoration: line-through;
+    font-size: 1.2rem;
+}
+
+.hero-price-new {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.hero-price-currency {
+    color: var(--color-bronze);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-price-amount {
+    color: #ff4d4d;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero-price-label {
+    color: #aaa;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.btn-hero-buy {
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #800000, #a00000);
+    border: 1px solid #CD7F32;
+    box-shadow: 0 0 15px rgba(205, 127, 50, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-shipping-note {
+    margin-top: 15px;
+    font-style: italic;
+    color: #ccc;
+    font-size: 0.9rem;
 }
 
 /* Section 2: Hook (Features) */
@@ -481,6 +587,67 @@ a {
     .rule-list-inline {
         flex-direction: column;
         gap: 15px;
+    }
+
+    .product-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 20px;
+        /* More space for stacked content */
+    }
+
+    .hero-text-col {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-subtitle,
+    .hero-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-section {
+        height: auto;
+        /* Allow content to expand */
+        min-height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    /* Mobile Text Adjustments */
+    .hero-text-card {
+        padding: 20px;
+        /* Reduced padding */
+    }
+
+    .hero-title-main {
+        font-size: 2rem;
+        /* Smaller title */
+    }
+
+    .hero-title-highlight {
+        font-size: 2.5rem;
+        /* Smaller highlight */
+    }
+
+    .hero-edition {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-price-amount {
+        font-size: 2.5rem;
+        /* Smaller price */
+    }
+
+    .btn.btn-lg {
+        width: 100%;
+        /* Full width button on mobile */
+        padding: 12px 20px;
     }
 }
 
@@ -1037,6 +1204,7 @@ a {
         font-size: 2rem;
     }
 }
+
 @media (max-width: 600px) {
     .product-showcase {
         grid-template-columns: 1fr;
@@ -1065,7 +1233,7 @@ a {
     color: var(--color-parchment);
     line-height: 1.8;
     margin-bottom: 40px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .story-desc strong {
@@ -1085,7 +1253,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
     border: 1px solid var(--color-bronze-dark);
     border-radius: 4px;

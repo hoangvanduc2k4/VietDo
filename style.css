@@ -658,12 +658,20 @@ a {
 
 .carousel-wrapper {
     position: relative;
-    /* Aspect ratio for the carousel images if needed, or just auto height */
-    min-height: 400px;
+    width: 100%;
+    /* Fixed Aspect Ratio: 4:3 */
+    aspect-ratio: 4 / 3;
+    /* Fallback for older browsers if needed, though aspect-ratio is well supported */
+    overflow: hidden;
 }
 
 .carousel-slide {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     animation: fadeEffect 1s;
 }
 
@@ -673,9 +681,11 @@ a {
 
 .carousel-slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
-    /* Ensure full image visibility */
+    /* Ensures entire image is visible without cropping */
+    background-color: #000;
+    /* Fill empty space if image doesn't match aspect ratio */
 }
 
 /* Caption */
@@ -949,13 +959,9 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .product-showcase {
-        grid-template-columns: 1fr;
-    }
+    /* .product-showcase removed from here to keep side-by-side layout longer */
 
-    .product-image-col {
-        margin-bottom: 30px;
-    }
+    /* .product-image-col margin removed as it's not stacked yet */
 
     .specs-table {
         font-size: 0.8rem;
@@ -968,6 +974,12 @@ a {
 }
 
 @media (max-width: 768px) {
+    /* .product-showcase moved to 600px query to keep side-by-side on tablets */
+
+    .product-image-col {
+        margin-bottom: 30px;
+    }
+
     .hero-section {
         min-height: 100vh;
         /* Flex height instead of fixed */
@@ -1023,5 +1035,130 @@ a {
 
     .hero-title {
         font-size: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .product-showcase {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Story Section */
+.story-section {
+    padding: 80px 0;
+    background: url('Image/bg-texture.png') repeat, #151515;
+    background-blend-mode: overlay;
+    text-align: center;
+    border-bottom: 1px solid var(--color-bronze-dark);
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-desc {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--color-parchment);
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.story-desc strong {
+    color: var(--color-bronze);
+}
+
+.story-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.story-highlights li {
+    font-size: 1.1rem;
+    color: var(--color-bronze);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    border: 1px solid var(--color-bronze-dark);
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .story-highlights {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Card Lore Section */
+.lore-section {
+    padding: 80px 0;
+    background: #111;
+    border-bottom: 2px solid var(--color-bronze-dark);
+}
+
+.lore-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.lore-group h3 {
+    color: var(--color-war-red);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--color-bronze);
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.lore-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid var(--color-bronze);
+    transition: transform 0.3s;
+}
+
+.lore-item:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.lore-item h4 {
+    color: var(--color-parchment);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.lore-quote {
+    font-style: italic;
+    color: var(--color-bronze);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.lore-desc {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .lore-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
